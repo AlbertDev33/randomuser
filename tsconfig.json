@@ -14,7 +14,15 @@
     "baseUrl": "./src",
     "outDir": "dist",
     "paths": {
-      
+      "@services/*": [
+        "services/*"
+      ],
+      "@gateways/*": [
+        "gateways/*"
+      ],
+      "@entities/*": [
+        "entities/*"
+      ]
     }
   },
   "include": [
