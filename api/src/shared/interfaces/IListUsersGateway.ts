@@ -1,5 +1,7 @@
 import { User } from '@entities/User';
 
+import { IApiResults } from './IListUsers';
+
 export interface IListUsersGateway {
-  list(): Promise<User>;
+  list({ query }: IApiResults): Promise<User>;
 }

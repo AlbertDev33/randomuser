@@ -1,12 +1,12 @@
 import { User } from '@entities/User';
-import { IListUsers } from '@shared/interfaces/IListUsers';
+import { IApiResults, IListUsers } from '@shared/interfaces/IListUsers';
 import { IListUsersGateway } from '@shared/interfaces/IListUsersGateway';
 
 export class ListUsers implements IListUsers {
   constructor(private listUsers: IListUsersGateway) {}
 
-  public async execute(): Promise<User> {
-    const users = await this.listUsers.list();
+  public async execute({ query }: IApiResults): Promise<User> {
+    const users = await this.listUsers.list({ query });
     return users;
   }
 }

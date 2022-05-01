@@ -1,6 +1,10 @@
 import express, { Request, Response, Router } from 'express';
 
-export interface IRequest extends Request {}
+export interface IRequest extends Request {
+  query: {
+    results: string;
+  };
+}
 export interface IResponse extends Response {}
 export interface IRouter extends Router {}
 
