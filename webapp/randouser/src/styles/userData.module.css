@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+}
+
+.routeButton {
+    background-color: #fff;
+    margin-top: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #445da9;
+    color: #445da9;
+    font-size: 20px;
+    height: 44px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.container img {
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 24px;
+    margin: 25px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.userProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userProfile label {
+    margin-top: 1rem;
+}
