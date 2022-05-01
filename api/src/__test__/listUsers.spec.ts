@@ -1,6 +1,7 @@
 /* eslint-disable no-promise-executor-return */
 import { User } from '@entities/User';
 import { ListUsers } from '@services/ListUsers/ListUsers';
+import { IApiResults } from '@shared/interfaces/IListUsers';
 import { IListUsersGateway } from '@shared/interfaces/IListUsersGateway';
 
 type SutType = {
@@ -74,7 +75,12 @@ describe('List Users', () => {
   it('should list users', async () => {
     const { stub } = sut();
 
-    const users = await stub.execute();
+    const results: IApiResults = {
+      query: {
+        results: '10',
+      },
+    };
+    const users = await stub.execute({ query: results.query });
     const length = users.results.length > 0;
 
     expect(length).toBe(true);
