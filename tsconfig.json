@@ -10,6 +10,7 @@
     "sourceMap": true,
     "target": "ES2020",
     "module": "CommonJS",
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "baseUrl": "./src",
     "outDir": "dist",
@@ -22,6 +23,9 @@
       ],
       "@entities/*": [
         "entities/*"
+      ],
+      "@shared/*": [
+        "shared/*"
       ]
     }
   },
