@@ -1,60 +1,62 @@
 /* eslint-disable no-promise-executor-return */
 import { User } from '@entities/User';
-import { IListUsersGateway } from '@gateways/ListUsersGateway/protocol/IListUsersGateway';
 import { ListUsers } from '@services/ListUsers/ListUsers';
+import { IListUsersGateway } from '@shared/interfaces/IListUsersGateway';
 
 type SutType = {
   stub: ListUsers;
 };
 
 class ListUsersGatewayStub implements IListUsersGateway {
-  private users = [
-    {
-      gender: '',
-      name: {
-        first: '',
-        last: '',
-      },
-      location: {
-        street: '',
-        city: '',
-        state: '',
-        postcode: '',
-        coordinates: {
-          latitude: '',
-          longitude: '',
+  private users = {
+    results: [
+      {
+        gender: '',
+        name: {
+          first: '',
+          last: '',
         },
+        location: {
+          street: '',
+          city: '',
+          state: '',
+          postcode: '',
+          coordinates: {
+            latitude: '',
+            longitude: '',
+          },
+        },
+        email: '',
+        login: {
+          uuid: '',
+          username: '',
+          password: '',
+        },
+        dob: {
+          date: new Date(),
+          age: 17,
+        },
+        registered: {
+          date: new Date(),
+          age: 17,
+        },
+        phone: '',
+        cell: '',
+        id: {
+          name: '',
+          value: '',
+        },
+        picture: {
+          large: '',
+          medium: '',
+          thumbnail: '',
+        },
+        nat: '',
       },
-      email: '',
-      login: {
-        uuid: '',
-        username: '',
-        password: '',
-      },
-      dob: {
-        date: new Date(),
-        age: 17,
-      },
-      registered: {
-        date: new Date(),
-        age: 17,
-      },
-      phone: '',
-      cell: '',
-      id: {
-        name: '',
-        value: '',
-      },
-      picture: {
-        large: '',
-        medium: '',
-        thumbnail: '',
-      },
-      nat: '',
-    },
-  ];
-  async list(): Promise<User[]> {
-    const promise = new Promise<User[]>(resolve => resolve(this.users));
+    ],
+  };
+  async list(): Promise<User> {
+    const promise = new Promise<User>(resolve => resolve(this.users as User));
     return promise;
   }
 }
@@ -73,8 +75,8 @@ describe('List Users', () => {
     const { stub } = sut();
 
     const users = await stub.execute();
-    const { length } = users;
+    const length = users.results.length > 0;
 
-    expect(users.length).toEqual(length);
+    expect(length).toBe(true);
   });
 });
