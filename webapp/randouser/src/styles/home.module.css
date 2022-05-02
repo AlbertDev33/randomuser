@@ -45,3 +45,16 @@
     flex-direction: column;
     max-width: 100%;
 }
+
+.searchButton {
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #445da9;
+    color: #445da9;
+    font-size: 20px;
+    height: 44px;
+    width: 8rem;
+    cursor: pointer;
+}
