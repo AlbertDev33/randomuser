@@ -1,6 +1,6 @@
 # Conteúdo da API
 
-Apesar desse projeto ser bastante simples - listar usuários de uma API - foi implementada uma API para lhe dar com as requisições. O intuíto foi demonstrar a implementação de uma API utilizando algumas boas práticas de desenvolvimento, utilizando recursos de clean architecture, SOLID e alguns patterns.
+Apesar desse projeto ser bastante simples - listar usuários de uma API - foi implementada uma API para lidar com as requisições. O intuíto foi demonstrar a implementação de uma API utilizando algumas boas práticas de desenvolvimento, utilizando recursos de clean architecture, SOLID e alguns patterns.
 
 Nessa API foi implementada algumas camadas da clean architecture, como entities, main, use cases (nessa API denominada services), Gateways e Controllers.
 
