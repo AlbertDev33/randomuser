@@ -9,7 +9,7 @@ Buscando desacoplamento, foi implementado injeção de dependências, inversão 
 ### Rotas de recursos
 
 **GET**: **'/list'**
-- Rota para listage dos usuários. Essa rota pode receber por query parameter a quantidade de itens que devem ser listados. O retorno sempre será simulando usuários da região do Brasil.
+- Rota para listagem dos usuários. Essa rota pode receber por query parameter a quantidade de itens que devem ser listados. O retorno sempre será simulando usuários da região do Brasil.
 
 Ao ser invocada, essa rota retorna uma lista contendo dados aleatórios de usuários, conforme abaixo:
 ```json
@@ -80,7 +80,7 @@ Ao ser invocada, essa rota retorna uma lista contendo dados aleatórios de usuá
 **Ferramentas utilizadas na API**:
 
 - Express para criar o servidor da API;
-- Axios para implementar as requisições para a API de listage de usuários;
+- Axios para implementar as requisições para a API de listagem de usuários;
 - Typescript para garantir uma tipagem forte e possibilitar algumas boas práticas que não são possíveis com apenas Javascript;
 - Jest para criar testes automatizados;
 - Supertest para auxiliar no teste de integração;
@@ -120,7 +120,7 @@ A tecnologia escolhida para criar o projeto web dessa aplicação foi o Next.js.
 
 **Ferramentas utilizadas no projeto web**:
 
-- Axios para implementar as requisições para a API de listage de usuários;
+- Axios para implementar as requisições para a API de listagem de usuários;
 - Typescript para garantir uma tipagem forte.
 
 
