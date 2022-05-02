@@ -105,12 +105,18 @@ A tecnologia escolhida para criar o projeto web dessa aplicação foi o Next.js.
 
 - Na página inicial são listados 12 usuários(as). Há a possibilidade de clicar no nome de cada um para visualizar mais detalhes desse usuário.
 
+- No campo de busca é possível passar um nome de usuário para buscar e ver os detalhes.
+
 - No momento da execução da página inicial, um cache, com todos os usuário listados é criado para que possa ser buscado na página de detalhes, através de um id do tipo uuid.
+
+**Importante**
+  - A funcionalidade de SSG (Static Site Generation) só funciona em ambiente de build (ou de produção). Detalhes de como executar esse ambiente logo abaixo.
 
 ### Como executar o projeto web
 
 * Primeiramente é necessário instalar as dependências com yarn ou npm;
-* O próximo passo é executar o comando ```yarn dev``` ou ```npm run dev``` para executar o app em ambiente de desenvolvimento.
+* O próximo passo é executar o comando ```yarn dev``` ou ```npm run dev``` para executar o app em ambiente de desenvolvimento;
+* Para executar o projeto simulando um ambiente de produção, execute o comando ```yarn build``` e logo em seguida, após a build ser construiída, execute ```yarn start```.
 
 **Ferramentas utilizadas no projeto web**:
 
