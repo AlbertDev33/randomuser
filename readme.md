@@ -97,7 +97,7 @@ Ao ser invocada, essa rota retorna uma lista contendo dados aleatórios de usuá
 * Após instalação das dependências do projeto, descrita no item anterior, execute o comando ```yarn test``` ou ```npm run test```.
 
 
-# Conteúdo da app web
+# Conteúdo do app web
 
 A tecnologia escolhida para criar o projeto web dessa aplicação foi o Next.js. Sua escolha se deu por seu recurso de renderização pelo lado do servidor. Essa possibilidade traz grandes ganhos no quesito performance.
 
