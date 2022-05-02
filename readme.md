@@ -116,7 +116,7 @@ A tecnologia escolhida para criar o projeto web dessa aplicação foi o Next.js.
 
 * Primeiramente é necessário instalar as dependências com yarn ou npm;
 * O próximo passo é executar o comando ```yarn dev``` ou ```npm run dev``` para executar o app em ambiente de desenvolvimento;
-* Para executar o projeto simulando um ambiente de produção, execute o comando ```yarn build``` e logo em seguida, após a build ser construiída, execute ```yarn start```.
+* Para executar o projeto simulando um ambiente de produção, execute o comando ```yarn build``` e logo em seguida, após a build ser construída, execute o comando ```yarn start```.
 
 **Ferramentas utilizadas no projeto web**:
 
