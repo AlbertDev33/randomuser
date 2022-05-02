@@ -120,4 +120,4 @@ A tecnologia escolhida para criar o projeto web dessa aplicação foi o Next.js.
 
 # Importante
 
-**Para que o app funcione a API deve estar rodando em ```http://localhost:3333```. Caso a rota da API seja alterada, a função request, na página util deve ser atualizada com a nova rota.**
+**Para que o app funcione a API deve estar rodando em ```http://localhost:3333```. Caso a rota da API seja alterada, a função request, na pasta util deve ser atualizada com a nova rota.**
